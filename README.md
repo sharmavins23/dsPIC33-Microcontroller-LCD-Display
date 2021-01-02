@@ -2,7 +2,7 @@
 
 This project is a schematic and PCB layout of the dsPIC33 EP64 MC502
 microcontroller, as well as an implementation of the LCD display and an LCD
-display library. The project has the schematic files in the main directory.
+display library.
 
 ## Schematic
 
