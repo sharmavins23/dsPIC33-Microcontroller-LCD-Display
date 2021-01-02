@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name DSPIC33EP64MC502-I_SP)(type Legacy)(uri ${KIPRJMOD}/lib/DSPIC33EP64MC502-I_SP/DSPIC33EP64MC502-I_SP.mod)(options "")(descr ""))
+  (lib (name LM2937ET-3.3_NOPB)(type Legacy)(uri ${KIPRJMOD}/lib/LM2937ET-3.3_NOPB/LM2937ET-3.3_NOPB.mod)(options "")(descr ""))
+)

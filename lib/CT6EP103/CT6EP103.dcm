@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CT6EP103
+D SINGLE TURN CERMET TRIMMER
+K
+F https://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf
+$ENDCMP
+#
+#End Doc Library
