@@ -1,5 +1,15 @@
 # DSPIC33 Microcontroller with LCD Display
 
+This project is a schematic and PCB layout of the dsPIC33 EP64 MC502
+microcontroller, as well as an implementation of the LCD display and an LCD
+display library. The project has the schematic files in the main directory.
+
+## Schematic
+
+The following is the circuit schematic.
+
+![img](https://cdn.discordapp.com/attachments/714206938719715429/795037175577575444/unknown.png)
+
 # License TL;DR
 
 This project is distributed under the MIT license. This is a paraphrasing of a
