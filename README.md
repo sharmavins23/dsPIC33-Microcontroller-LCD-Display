@@ -10,6 +10,12 @@ The following is the circuit schematic.
 
 ![img](https://cdn.discordapp.com/attachments/714206938719715429/795037175577575444/unknown.png)
 
+## PCB Layout
+
+The following is the PCB layout.
+
+![img](https://cdn.discordapp.com/attachments/714206938719715429/795059891685031936/unknown.png)
+
 # License TL;DR
 
 This project is distributed under the MIT license. This is a paraphrasing of a
