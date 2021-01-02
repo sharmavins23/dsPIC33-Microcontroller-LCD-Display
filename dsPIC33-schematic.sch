@@ -1,4 +1,551 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DSPIC33EP64MC502-I_SP:DSPIC33EP64MC502-I_SP IC1
+U 1 1 5FF203EE
+P 3450 2850
+F 0 "IC1" H 5800 3115 50  0000 C CNN
+F 1 "DSPIC33EP64MC502-I_SP" H 5800 3024 50  0000 C CNN
+F 2 "DIP794W56P254L3486H508Q28N" H 8000 2950 50  0001 L CNN
+F 3 "https://eu.mouser.com/datasheet/2/268/70000657H-277982.pdf" H 8000 2850 50  0001 L CNN
+F 4 "Digital Signal Processors & Controllers - DSP, DSC 16b DSC 64KB FL 8KBR 60MHz 28P MCPWMQEI" H 8000 2750 50  0001 L CNN "Description"
+F 5 "5.08" H 8000 2650 50  0001 L CNN "Height"
+F 6 "Microchip" H 8000 2550 50  0001 L CNN "Manufacturer_Name"
+F 7 "DSPIC33EP64MC502-I/SP" H 8000 2450 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-33EP64MC502ISP" H 8000 2350 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/dsPIC33EP64MC502-I-SP?qs=nMCt4TBfEwo98XC7wL%2F%252BHw%3D%3D" H 8000 2250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "DSPIC33EP64MC502-I/SP" H 8000 2150 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/dspic33ep64mc502-isp/microchip-technology" H 8000 2050 50  0001 L CNN "Arrow Price/Stock"
+	1    3450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FF3D95C
+P 3350 2600
+F 0 "R1" H 3420 2646 50  0000 L CNN
+F 1 "4.7k" H 3420 2555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3280 2600 50  0001 C CNN
+F 3 "~" H 3350 2600 50  0001 C CNN
+	1    3350 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2850 3350 2850
+Wire Wire Line
+	3350 2850 3350 2750
+Wire Wire Line
+	1050 1400 1050 1900
+Wire Wire Line
+	600  1400 600  1300
+$Comp
+L power:+5V #PWR?
+U 1 1 5FF39797
+P 600 1300
+F 0 "#PWR?" H 600 1150 50  0001 C CNN
+F 1 "+5V" H 615 1473 50  0000 C CNN
+F 2 "" H 600 1300 50  0001 C CNN
+F 3 "" H 600 1300 50  0001 C CNN
+	1    600  1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 750  1400
+Wire Wire Line
+	750  1400 600  1400
+Wire Wire Line
+	750  1900 1050 1900
+Wire Wire Line
+	750  1800 750  1900
+Connection ~ 1050 1900
+Wire Wire Line
+	1350 1900 1050 1900
+Wire Wire Line
+	1350 1800 1350 1900
+Wire Wire Line
+	1350 1400 1350 1500
+Wire Wire Line
+	1150 1400 1350 1400
+Wire Wire Line
+	750  1500 750  1400
+Wire Wire Line
+	950  1400 750  1400
+Wire Wire Line
+	1050 2050 1050 1900
+$Comp
+L Device:C C1
+U 1 1 5FF326BA
+P 750 1650
+F 0 "C1" H 865 1696 50  0000 L CNN
+F 1 "0.1u" H 865 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 788 1500 50  0001 C CNN
+F 3 "~" H 750 1650 50  0001 C CNN
+	1    750  1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF29E27
+P 1050 2050
+F 0 "#PWR?" H 1050 1800 50  0001 C CNN
+F 1 "GND" H 1055 1877 50  0000 C CNN
+F 2 "" H 1050 2050 50  0001 C CNN
+F 3 "" H 1050 2050 50  0001 C CNN
+	1    1050 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM2937ET-3.3_NOPB:LM2937ET-3.3_NOPB IC2
+U 1 1 5FF230C2
+P 950 1400
+F 0 "IC2" V 1388 1072 50  0000 R CNN
+F 1 "LM2937ET-3.3_NOPB" V 1297 1072 50  0000 R CNN
+F 2 "TO254P470X1028X1955-3P" H 1800 1500 50  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm2937" H 1800 1400 50  0001 L CNN
+F 4 "400mA and 500mA Voltage Regulator" H 1800 1300 50  0001 L CNN "Description"
+F 5 "4.7" H 1800 1200 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 1800 1100 50  0001 L CNN "Manufacturer_Name"
+F 7 "LM2937ET-3.3/NOPB" H 1800 1000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "926-LM2937ET-3.3NOPB" H 1800 900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LM2937ET-33-NOPB/?qs=X1J7HmVL2ZEMUke2IfNR4w%3D%3D" H 1800 800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "LM2937ET-3.3/NOPB" H 1800 700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/lm2937et-3.3nopb/texas-instruments" H 1800 600 50  0001 L CNN "Arrow Price/Stock"
+	1    950  1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF60EE2
+P 9550 3250
+F 0 "#PWR?" H 9550 3000 50  0001 C CNN
+F 1 "GND" H 9555 3077 50  0000 C CNN
+F 2 "" H 9550 3250 50  0001 C CNN
+F 3 "" H 9550 3250 50  0001 C CNN
+	1    9550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2950 9550 2950
+$Comp
+L Device:C C3
+U 1 1 5FF63C58
+P 9700 3000
+F 0 "C3" H 9815 3046 50  0000 L CNN
+F 1 "0.1u" H 9815 2955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9738 2850 50  0001 C CNN
+F 3 "~" H 9700 3000 50  0001 C CNN
+	1    9700 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5FF313AE
+P 1350 1650
+F 0 "C2" H 1468 1696 50  0000 L CNN
+F 1 "10u" H 1468 1605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 1388 1500 50  0001 C CNN
+F 3 "~" H 1350 1650 50  0001 C CNN
+	1    1350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5FF6BA94
+P 1200 3050
+F 0 "J1" H 1308 3431 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 1308 3340 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 1200 3050 50  0001 C CNN
+F 3 "~" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2850 3350 2850
+Connection ~ 3350 2850
+Wire Wire Line
+	8150 1400 8150 2850
+Wire Wire Line
+	1350 1400 1700 1400
+Connection ~ 1350 1400
+Wire Wire Line
+	9700 2850 8150 2850
+Connection ~ 8150 2850
+Wire Wire Line
+	9550 2950 9550 3150
+Wire Wire Line
+	9700 3150 9550 3150
+Connection ~ 9550 3150
+Wire Wire Line
+	9550 3150 9550 3250
+Wire Wire Line
+	3350 1400 3350 2450
+Connection ~ 3350 1400
+Wire Wire Line
+	3350 1400 8150 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5FF70FCD
+P 1650 3050
+F 0 "#PWR?" H 1650 2800 50  0001 C CNN
+F 1 "GND" H 1655 2877 50  0000 C CNN
+F 2 "" H 1650 3050 50  0001 C CNN
+F 3 "" H 1650 3050 50  0001 C CNN
+	1    1650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2950 1700 1400
+Wire Wire Line
+	1400 2950 1700 2950
+Wire Wire Line
+	1400 3050 1650 3050
+Wire Wire Line
+	1400 3150 1500 3150
+Wire Wire Line
+	1500 3150 1500 4150
+Wire Wire Line
+	1500 4150 3450 4150
+Wire Wire Line
+	1400 3250 1400 4350
+Wire Wire Line
+	1400 4350 8150 4350
+Wire Wire Line
+	8150 4350 8150 4150
+Wire Wire Line
+	3450 4050 2800 4050
+Wire Wire Line
+	2800 4050 2800 1400
+Connection ~ 2800 1400
+Wire Wire Line
+	2800 1400 3350 1400
+$Comp
+L Device:C C4
+U 1 1 5FF7681D
+P 2800 4600
+F 0 "C4" H 2915 4646 50  0000 L CNN
+F 1 "0.1u" H 2915 4555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 2838 4450 50  0001 C CNN
+F 3 "~" H 2800 4600 50  0001 C CNN
+	1    2800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FF784E1
+P 2800 4850
+F 0 "#PWR?" H 2800 4600 50  0001 C CNN
+F 1 "GND" H 2805 4677 50  0000 C CNN
+F 2 "" H 2800 4850 50  0001 C CNN
+F 3 "" H 2800 4850 50  0001 C CNN
+	1    2800 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4750 2800 4850
+Wire Wire Line
+	2800 4450 2800 4050
+Connection ~ 2800 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5FF79DDC
+P 3350 3550
+F 0 "#PWR?" H 3350 3300 50  0001 C CNN
+F 1 "GND" H 3355 3377 50  0000 C CNN
+F 2 "" H 3350 3550 50  0001 C CNN
+F 3 "" H 3350 3550 50  0001 C CNN
+	1    3350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3550 3350 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5FF7B0DC
+P 8750 3750
+F 0 "#PWR?" H 8750 3500 50  0001 C CNN
+F 1 "GND" H 8755 3577 50  0000 C CNN
+F 2 "" H 8750 3750 50  0001 C CNN
+F 3 "" H 8750 3750 50  0001 C CNN
+	1    8750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3750 8750 3750
+$Comp
+L Device:C C5
+U 1 1 5FF7C9A1
+P 9000 3800
+F 0 "C5" H 9115 3846 50  0000 L CNN
+F 1 "22u" H 9115 3755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9038 3650 50  0001 C CNN
+F 3 "~" H 9000 3800 50  0001 C CNN
+	1    9000 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3650 9000 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5FF7F158
+P 9000 4050
+F 0 "#PWR?" H 9000 3800 50  0001 C CNN
+F 1 "GND" H 9005 3877 50  0000 C CNN
+F 2 "" H 9000 4050 50  0001 C CNN
+F 3 "" H 9000 4050 50  0001 C CNN
+	1    9000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3950 9000 4050
+$Comp
+L Connector:Conn_01x16_Female J2
+U 1 1 5FF808FC
+P 12300 3550
+F 0 "J2" H 12328 3526 50  0000 L CNN
+F 1 "Conn_01x16_Female" H 12328 3435 50  0000 L CNN
+F 2 "" H 12300 3550 50  0001 C CNN
+F 3 "~" H 12300 3550 50  0001 C CNN
+	1    12300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CT6EP103:CT6EP103 R2
+U 1 1 5FF98BD8
+P 11200 3050
+F 0 "R2" H 11600 3315 50  0000 C CNN
+F 1 "CT6EP103" H 11600 3224 50  0000 C CNN
+F 2 "CT-6EP" H 11850 3150 50  0001 L CNN
+F 3 "https://www.nidec-copal-electronics.com/e/catalog/trimmer/ct-6.pdf" H 11850 3050 50  0001 L CNN
+F 4 "SINGLE TURN CERMET TRIMMER" H 11850 2950 50  0001 L CNN "Description"
+F 5 "" H 11850 2850 50  0001 L CNN "Height"
+F 6 "Copal Electronics" H 11850 2750 50  0001 L CNN "Manufacturer_Name"
+F 7 "CT6EP103" H 11850 2650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 11850 2550 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 11850 2450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 11850 2350 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 11850 2250 50  0001 L CNN "Arrow Price/Stock"
+	1    11200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 3050 12000 3050
+Wire Wire Line
+	11200 3050 11200 2700
+Wire Wire Line
+	11200 2700 11950 2700
+Wire Wire Line
+	11950 2700 11950 2950
+Wire Wire Line
+	11950 2950 12100 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5FFB137A
+P 11200 4450
+F 0 "#PWR?" H 11200 4200 50  0001 C CNN
+F 1 "GND" H 11205 4277 50  0000 C CNN
+F 2 "" H 11200 4450 50  0001 C CNN
+F 3 "" H 11200 4450 50  0001 C CNN
+	1    11200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 3150 11200 3300
+Wire Wire Line
+	12100 3250 11950 3250
+Wire Wire Line
+	11950 3250 11950 3300
+Wire Wire Line
+	11950 3300 11200 3300
+Connection ~ 11200 3300
+Wire Wire Line
+	11200 3300 11200 4450
+Wire Wire Line
+	12100 2850 12100 2550
+Wire Wire Line
+	12100 2550 11050 2550
+Wire Wire Line
+	11050 2550 11050 3300
+Wire Wire Line
+	11050 3300 11200 3300
+$Comp
+L power:+5V #PWR?
+U 1 1 5FFB70FA
+P 11200 2250
+F 0 "#PWR?" H 11200 2100 50  0001 C CNN
+F 1 "+5V" H 11215 2423 50  0000 C CNN
+F 2 "" H 11200 2250 50  0001 C CNN
+F 3 "" H 11200 2250 50  0001 C CNN
+	1    11200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 2250 11200 2700
+Connection ~ 11200 2700
+Wire Wire Line
+	12100 3350 9700 3350
+Wire Wire Line
+	9700 3350 9700 3500
+Wire Wire Line
+	9700 3500 9350 3500
+Wire Wire Line
+	9350 3500 9350 3250
+Wire Wire Line
+	9350 3250 8150 3250
+Wire Wire Line
+	12100 3150 11900 3150
+Wire Wire Line
+	11900 3150 11900 3550
+Wire Wire Line
+	11900 3550 9300 3550
+Wire Wire Line
+	9300 3550 9300 3350
+Wire Wire Line
+	9300 3350 8150 3350
+Wire Wire Line
+	12100 4150 9250 4150
+Wire Wire Line
+	9250 4150 9250 3450
+Wire Wire Line
+	9250 3450 8150 3450
+Wire Wire Line
+	8150 3550 9200 3550
+Wire Wire Line
+	9200 3550 9200 4050
+Wire Wire Line
+	9200 4050 12100 4050
+Wire Wire Line
+	12100 3950 11800 3950
+Wire Wire Line
+	11800 3950 11800 4700
+Wire Wire Line
+	11800 4700 8600 4700
+Wire Wire Line
+	8600 4700 8600 3850
+Wire Wire Line
+	8600 3850 8150 3850
+Wire Wire Line
+	12100 3850 11700 3850
+Wire Wire Line
+	11700 3850 11700 4800
+Wire Wire Line
+	11700 4800 8500 4800
+Wire Wire Line
+	8500 4800 8500 3950
+Wire Wire Line
+	8500 3950 8150 3950
+$Comp
+L Connector:Conn_01x10_Male J3
+U 1 1 5FFCC4EF
+P 750 5500
+F 0 "J3" H 858 6081 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 858 5990 50  0000 C CNN
+F 2 "" H 750 5500 50  0001 C CNN
+F 3 "~" H 750 5500 50  0001 C CNN
+	1    750  5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 1400
+Wire Wire Line
+	1700 1400 2800 1400
+Wire Wire Line
+	1850 2950 3450 2950
+Wire Wire Line
+	3450 3050 1900 3050
+Wire Wire Line
+	3450 3150 1950 3150
+Wire Wire Line
+	3450 3250 2000 3250
+Wire Wire Line
+	3450 3350 2050 3350
+Wire Wire Line
+	3450 3450 2100 3450
+Wire Wire Line
+	3450 3650 2150 3650
+Wire Wire Line
+	3450 3750 2200 3750
+Wire Wire Line
+	3450 3850 2250 3850
+Wire Wire Line
+	3450 3950 2300 3950
+Wire Wire Line
+	1850 2950 1850 5100
+Wire Wire Line
+	1850 5100 950  5100
+Wire Wire Line
+	1900 3050 1900 5200
+Wire Wire Line
+	1900 5200 950  5200
+Wire Wire Line
+	1950 3150 1950 5300
+Wire Wire Line
+	1950 5300 950  5300
+Wire Wire Line
+	2000 3250 2000 5400
+Wire Wire Line
+	2000 5400 950  5400
+Wire Wire Line
+	2050 3350 2050 5500
+Wire Wire Line
+	2050 5500 950  5500
+Wire Wire Line
+	2100 3450 2100 5600
+Wire Wire Line
+	2100 5600 950  5600
+Wire Wire Line
+	2150 3650 2150 5700
+Wire Wire Line
+	2150 5700 950  5700
+Wire Wire Line
+	2200 3750 2200 5800
+Wire Wire Line
+	2200 5800 950  5800
+Wire Wire Line
+	2250 3850 2250 5900
+Wire Wire Line
+	2250 5900 950  5900
+Wire Wire Line
+	2300 3950 2300 6000
+Wire Wire Line
+	2300 6000 950  6000
+$Comp
+L Connector:Conn_01x03_Male J4
+U 1 1 6001E016
+P 9550 5250
+F 0 "J4" H 9522 5274 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9522 5183 50  0000 R CNN
+F 2 "" H 9550 5250 50  0001 C CNN
+F 3 "~" H 9550 5250 50  0001 C CNN
+	1    9550 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 3050 8450 3050
+Wire Wire Line
+	8450 3050 8450 5150
+Wire Wire Line
+	8450 5150 9350 5150
+Wire Wire Line
+	8150 3150 8350 3150
+Wire Wire Line
+	8350 3150 8350 5250
+Wire Wire Line
+	8350 5250 9350 5250
+Wire Wire Line
+	9350 5350 8250 5350
+Wire Wire Line
+	8250 5350 8250 4050
+Wire Wire Line
+	8250 4050 8150 4050
 $EndSCHEMATC
