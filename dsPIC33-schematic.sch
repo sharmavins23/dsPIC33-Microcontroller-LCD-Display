@@ -613,4 +613,32 @@ F 3 "~" H 9050 2750 50  0001 C CNN
 	1    9050 2750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J5
+U 1 1 602EB31C
+P 2000 2600
+F 0 "J5" H 1918 2375 50  0000 C CNN
+F 1 "Conn_01x01" H 1918 2466 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2000 2600 50  0001 C CNN
+F 3 "~" H 2000 2600 50  0001 C CNN
+	1    2000 2600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 2600 2300 2600
+Connection ~ 2300 2600
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 6030D9A2
+P 2100 3100
+F 0 "J6" H 2018 2875 50  0000 C CNN
+F 1 "Conn_01x01" H 2018 2966 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 2100 3100 50  0001 C CNN
+F 3 "~" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 3100 2400 3100
+Connection ~ 2400 3100
 $EndSCHEMATC
