@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DSPIC33EP64MC502-I_SP
+D Digital Signal Processors & Controllers - DSP, DSC 16b DSC 64KB FL 8KBR 60MHz 28P MCPWMQEI
+K
+F https://eu.mouser.com/datasheet/2/268/70000657H-277982.pdf
+$ENDCMP
+#
+#End Doc Library
